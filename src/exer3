@@ -1,0 +1,19 @@
+def conta_vogais(s):
+    # Passo 1: Definindo o conjunto de vogais (minúsculas e maiúsculas)
+    vogais = set("aeiouAEIOU")
+    
+    # Passo 2: Inicializando o contador de vogais
+    contador = 0
+    
+    # Passo 3: Iterando por cada caractere na string
+    for char in s:
+        # Passo 4: Verificando se o caractere é uma vogal
+        if char in vogais:
+            contador += 1
+    
+    # Passo 5: Retornando o número total de vogais
+    return contador
+
+# Exemplos de uso da função:
+print(conta_vogais("Python"))         # Saída: 1
+print(conta_vogais("Programação"))    # Saída: 4
